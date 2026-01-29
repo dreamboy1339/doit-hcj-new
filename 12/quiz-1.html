@@ -14,10 +14,20 @@
     .container {      
       width: 600px;
       height: 500px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
     }
     .container > div {
       border: 1px solid #222;
       text-align: center;
+    }
+    .container > :nth-child(odd) {
+      background-color: pink;
+    }
+    .container > :nth-child(even) {
+      background-color: lightcoral;
     }
   </style>
 </head>
