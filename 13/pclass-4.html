@@ -26,6 +26,28 @@
 
     /* Do it! 가상 선택자를 사용해 항목 선택하기 */
 
+    .container :nth-child(3) {
+      background-color: beige;
+    }
+    .container :nth-child(even) {
+      background-color: red;
+    }
+    .container :nth-child(odd) {
+      background-color: blueviolet;
+    }
+    .container :nth-child(4n) {
+      background-color: aquamarine;
+    }
+    .container :nth-child(n+4) {
+      background-color: yellowgreen;
+    }
+    .container :nth-child(-n+4) {
+      background-color: yellow;
+    }
+    .container :nth-child(n+3):nth-child(-n+5) {
+      background-color: indianred;
+    }
+
   </style>
 </head>
 <body>
