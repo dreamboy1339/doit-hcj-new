@@ -19,9 +19,19 @@
 				width:100px;
 				height:100px;
 				background-color:orange;
+				transition: 1s; /* 부드럽게 확대/축소하도록 설정 */
 			}
 
       /* Do it! scale 함수로 확대,축소하기 */
+			#scalex:hover {
+				transform:scaleX(2); /* x축으로 2배 확대 */
+			}
+			#scaley:hover {
+				transform: scaleY(1.5); /* y축으로 1.5배 확대 */
+			}
+			#scale:hover {
+				transform: scale(0.7); /* 0.7배 축소 */
+			}
 
 		</style>
 	</head>
