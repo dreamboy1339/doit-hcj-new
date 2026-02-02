@@ -14,12 +14,16 @@
       .origin > div {
         width:152px;
         height:180px;
+				transition: 1s; /* 부드럽게 회전하도록 설정 */
       }
       .rotatex:hover {
         transform: rotateX(50deg);  /* x축으로 50도 회전 */ 
       }
 
 			/* Do it! 두번째 이미지에 원근감 추가하기  - 부모 요소에 적용할 것  */
+			#pers {
+				perspective: 300px; /* 원근감 설정 */
+			}
 
 		</style>
 	</head>
