@@ -20,9 +20,23 @@
 				width:100px;
 				height:100px;
 				background-color:orange;
+				transition: 1s; /* 부드럽게 이동하도록 설정 */
 			}
 
       /* Do it! 마우스 오버하면 사각형 이동하기 */
+
+			#movex:hover {
+				transform: translateX(50px); /* x축으로 50px 이동 */
+			}
+			#movey:hover {
+				transform: translateY(20px); /* y축으로 20px 이동 */
+			}
+			#movexy:hover {
+				transform: translate(10px, 20px); /* x축으로 10px, y축으로 20px 이동 */
+			}
+			#movexyz:hover {
+				transform: translate3d(10px,20px,-30px); /* 3D 이동 */
+			}
 
 		</style>
 	</head>
@@ -36,6 +50,9 @@
 			</div>
 			<div class="origin">
 				<div id="movexy"></div>		
+			</div>
+			<div class="origin">
+				<div id="movexyz"></div>		
 			</div>
 		</div>
 	</body>
