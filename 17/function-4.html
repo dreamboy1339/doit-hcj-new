@@ -24,6 +24,11 @@
 	<script>		
     // Do it! 즉시 실행 함수 사용하기
 
+    (function() {
+      let userName = prompt("input your name:");
+      document.write(`<p>Hello? <span class="accent">${userName}</span>!!!</p>`);
+    }());
+
   </script>	
 </body>
 </html>
