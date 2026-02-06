@@ -15,6 +15,12 @@
 	<script>		
 	// Do it! 매개변수가 있는 즉시 실행 함수 사용하기
 
+	(function(a, b) {
+		sum = a + b;
+	}(100, 200));
+
+	document.write(`result is ${sum}`);
+
   </script>	
 </body>
 </html>
