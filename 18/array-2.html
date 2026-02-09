@@ -26,18 +26,33 @@
 	
 			let nums = [1, 2, 3];
 			let chars = ["a", "b", "c", "d"];
-	
+			document.write(`length: ${nums.length} | Array: ${nums}<br>`);
+			document.write(`length: ${chars.length} | Array: ${chars}<br>`);
+			document.write(`<hr>`);
 			// 두 개의 배열 합치기
-	
+			let numsChars = nums.concat(chars);
+			let charsNums = chars.concat(nums);
+			document.write(`numsChars: ${numsChars}, <br> charsNums : ${charsNums}`);
+			document.write(`<hr>`);
 	
 			// 배열 안의 요소 합치기
-	
-	
+			let string1 = nums.join();
+			document.write(`string1 : ${string1}<br>`);
+			let string2 = chars.join('/');
+			document.write(`string2 : ${string2}`);
+			document.write(`<hr>`);
 			// 요소 추가 - 새로운 length 값 반환
-	
-	
+			let ret1 = nums.push(4,5);
+			document.write(`push(4,5) -> length: ${ret1} | Array: ${nums}<br>`);
+			let ret2 = nums.unshift(0);
+			document.write(`unshift(0) -> length: ${ret2} | Array: ${nums}<br>`);
+			document.write(`<hr>`);
 			// 요소 추출 - 꺼낸 요소 반환
-	
+			let popped1 = chars.pop();
+			document.write(`pop: ${popped1} | Array: ${chars}<br>`);
+			let popped2 = chars.shift();
+			document.write(`shift: ${popped2} | Array: ${chars}<br>`);
+			document.write(`<hr>`);	
 		</script>
 	</div>
 </body>
